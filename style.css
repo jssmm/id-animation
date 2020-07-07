@@ -1,7 +1,14 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
+
+.d-flex{display: flex;}
+.jcsb{justify-content: space-between;}
+.mb-10{margin-bottom: 10px;}
+.ml-70{margin-left: 70px;}
+.ml-702{margin-left: 108px;}
 
 #ine{
     width: 700px;
@@ -19,8 +26,9 @@
     top: 0;
     left: 0;
     animation:lineup 1.5s forwards;
-    transform: translateX(660px);
+    transform: translateX(730px);
     transition: 1.5s linear;
+    box-shadow: 0 0 4px red;
 }
    
 @keyframes lineup {
@@ -343,12 +351,12 @@
     width: 100%;
     height: 20%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
 #logo-eum{
-    width: 100px;
+    width: 110px;
 }
 
 .parte-abajo{
@@ -374,8 +382,39 @@
     max-width: 70%;
 }
 
-#nombre-datos:after{
+@keyframes faded {
+    0%{
+        opacity:0;
+        -webkit-transform:scale(3);
+        -ms-transform:scale(3);
+        transform:scale(3);
+    }
+    100%{
+        opacity:1;
+        -webkit-transform:scale(1);
+        -ms-transform:scale(1);
+        transform:scale(1);}
+  }
+
+/* #nombre-datos{
+        background-color: rgba(212, 53, 79, 0.15);
+        border: 2px solid #d4354f;
+        width: max-content;
+        margin-bottom: 5px;
+        animation-duration: 3s;
+        animation-name: faded;
+} */
+
+#nombre-datos{
+    position: relative;
+    margin-bottom: 13px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#nombre-datos::after{
     content: '';
+    margin: -5px;
     background-color: rgba(212, 53, 79, 0.15);
     border: 2px solid #d4354f;
     position: absolute;
@@ -384,7 +423,70 @@
     right: -2px;
     bottom: 0;
     opacity: 0;
-    -webkit-transform: scale(3);
-    -ms-transform: scale(3);
-    transform: scale(3);
+    animation: faded 250ms ease-out 1400ms forwards;
+}
+
+#domicilio-datos{
+    position: relative;
+    display: block;
+    margin-bottom: 7px;
+    vertical-align: middle;
+    width: max-content;
+}
+
+#domicilio-datos::after{
+    content: '';
+    background-color: rgba(71, 103, 208, 0.15);
+    border: 2px solid #4767d0;
+    position: absolute;
+    margin: -5px;
+    top: 0;
+    left: -2px;
+    right: -2px;
+    bottom: 0;
+    opacity: 0;
+    animation: faded 250ms ease-out 1650ms forwards;
+}
+
+#curp{
+    position: relative;
+    display: block;
+    vertical-align: middle;
+    width: max-content;
+}
+
+#curp::after{
+    content: '';
+    background-color: rgba(221, 79, 223, 0.15);
+    border: 2px solid #dd4fdf;
+    margin: -5px;
+    position: absolute;
+    top: 0;
+    left: -2px;
+    right: -2px;
+    bottom: 0;
+    opacity: 0;
+    animation: faded 250ms ease-out 1900ms forwards;
+}
+
+
+/* #domicilio-datos{
+    background-color: rgba(71, 103, 208, 0.15);
+    border: 2px solid #4767d0;
+    width: max-content;
+    margin-bottom: 5px;
+}
+
+#curp{
+    background-color: rgba(221, 79, 223, 0.15);
+    border: 2px solid #dd4fdf;
+    width: max-content;
+} */
+
+#anio{
+    margin-right: 15px;
+}
+
+.texto-pequeño{
+    font-size: 12px;
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -32,7 +33,7 @@
                     <p>JESSEN ALEJANDRO</p>
                 </div>
 
-                <div>
+                <div id="domicilio-datos">
                     <b>DOMICILIO</b>
                     <p>C JOSEFA ORTIZ DE DOMINGUEZ 1523</p>
                     <p>COL LA HUERTA 44730</p>
@@ -40,8 +41,23 @@
                 </div>
 
                 <div>
-                    <p><span>CLAVE DE ELECTOR</span> MRMJJS97080514H500</p>
-                    <p><span>CURP</span> MEMJ970805HJCRJS05</p>
+                    <p class="mb-10" id="elector"><span class="texto-pequeño">CLAVE DE ELECTOR</span> MRMJJS97080514H500</p>
+                    <div class="d-flex jcsb mb-10">
+                        <p id="curp"><span class="texto-pequeño">CURP</span> MEMJ970805HJCRJS05</p>
+                        <p id="anio"><span class="texto-pequeño">AÑO DE REGISTRO</span> 2015 00</p>
+                    </div>
+                </div>
+
+                <div class="d-flex mb-10">
+                    <p><span class="texto-pequeño">ESTADO</span> 14</p>
+                    <p class="ml-702"><span class="texto-pequeño">MUNICIPIO</span> 041</p>
+                    <p class="ml-70"><span class="texto-pequeño">SECCIÓN</span> 0745</p>
+                </div>
+
+                <div class="d-flex mb-10">
+                    <p><span class="texto-pequeño">LOCALIDAD</span> 0001</p>
+                    <p class="ml-70"><span class="texto-pequeño">EMISIÓN</span> 2015</p>
+                    <p class="ml-70"><span class="texto-pequeño">VIGENCIA</span> 2025</p>
                 </div>
 
             </div>
@@ -50,11 +66,6 @@
 
         </div>
 
-    </div>
-
-    <div class="padre">
-        <img id="ine" src="img/INE.jpg" alt="Prueba ine">
-        <div class="vertline"></div>
     </div>
 </body>
 </html>
