@@ -359,6 +359,16 @@
     width: 110px;
 }
 
+#mexico-arriba{
+    position: fixed;
+    margin-left: 115px;
+}
+
+#instituto-arriba{
+    position: fixed;
+    margin-left: 210px;
+}
+
 .parte-abajo{
     width: 100%;
     height: 80%;
@@ -373,8 +383,9 @@
 }
 
 #img-perfil{
-    width: 200px;
-    height: 240px;
+    margin-left: 13px;
+    width: 180px;
+    height: 193px;
 }
 
 .texto{
