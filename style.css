@@ -407,15 +407,6 @@
         transform:scale(1);}
   }
 
-/* #nombre-datos{
-        background-color: rgba(212, 53, 79, 0.15);
-        border: 2px solid #d4354f;
-        width: max-content;
-        margin-bottom: 5px;
-        animation-duration: 3s;
-        animation-name: faded;
-} */
-
 #nombre-datos{
     position: relative;
     margin-bottom: 13px;
